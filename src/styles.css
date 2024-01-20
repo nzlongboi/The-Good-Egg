@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    width: 100vw;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.tab {
+    margin-top: 75px;
+    padding-top: 25px;
+    height: 128px;
+    width: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../src/egg-icon-smaller2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+}
+
+#content-body {
+    height: 85%;
+    width: 100vw;
+    background-image: url('../src/egg-vector-smallest.png');
+}
+
+#overlay {
+    position: absolute;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    height: 85%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+}
