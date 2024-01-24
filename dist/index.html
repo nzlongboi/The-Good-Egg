@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <title>The Good Egg</title>
     <link rel="stylesheet" href="../src/styles.css">
-    <script type="module" src="src/index.js" defer></script>
+    <script src="../src/index.js" defer></script>
     <script src="main.js" defer></script>
 </head>
 <body>
     <div id="content">
         <header id="header">
-            <div class="tab" id="home">Home</div>
-            <div class="tab" id="menu">Menu</div>
-            <div class="tab" id="contact">Contact</div>
+            <div id="container">
+                <div class="tab" id="home">Home</div>
+                <div class="tab" id="menu">Menu</div>
+                <div class="tab" id="contact">Contact</div>
+            </div>
         </header>
-        <div id="content-body"></div>
+        <div id="content-body">
+            <div id="homeContent" class="tab-content">
+                <h2>Welcome to the Good Egg!</h2>
+            </div>
+            <div id="menuContent" class="tab-content">
+                <div class="menu-item">
+                    <div class="item-image" id="image1"></div>
+                    <div class="item-description">
+                        <h3>Dish Name</h3>
+                        <p>Description of the Dish</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image" id="image2"></div>
+                    <div class="item-description">
+                        <h3>Dish Name</h3>
+                        <p>Description of the Dish</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image" id="image3"></div>
+                    <div class="item-description">
+                        <h3>Dish Name</h3>
+                        <p>Description of the Dish</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image" id="image4"></div>
+                    <div class="item-description">
+                        <h3>Dish Name</h3>
+                        <p>Description of the Dish</p>
+                    </div>
+                </div>
+            <div id="contactContent" class="tab-content">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
         <div id="overlay"></div>
         <div id="footer"></div>
     </div>
