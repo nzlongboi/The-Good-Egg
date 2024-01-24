@@ -18,6 +18,11 @@ body {
     gap: 200px;
 }
 
+#container {
+    display: flex;
+    gap: 200px;
+}
+
 .tab {
     margin-top: 75px;
     padding-top: 25px;
@@ -26,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../src/egg-icon-smaller2.png');
+    background-image: url('../src/egg-icon-smallest.png');
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -34,12 +39,15 @@ body {
 }
 
 #content-body {
-    height: 85%;
+    position: absolute;
+    height: 89.3%;
     width: 100vw;
     background-image: url('../src/egg-vector-smallest.png');
+    padding: 0;
+    margin: 0;
 }
 
-#overlay {
+/*#overlay {
     position: absolute;
     margin-top: 100px;
     top: 0;
@@ -47,12 +55,85 @@ body {
     height: 85%;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.2);
-}
+}*/
 
 #footer {
     width: 100vw;
     height: 70px;
     position: absolute;
     bottom: 0;
+    border-bottom: yellow solid 5px;
     background-color: yellow;
+}
+
+
+
+.tab-content-inactive {
+    display: none;
+}
+
+.tab-content {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 95%;
+}
+
+#menuContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    overflow-y: scroll;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
+}
+
+.menu-item img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#content-body {
+    overflow: hidden;
+}
+
+/* What I want is for there to be one column with rows that
+accomodate for a picture of the dish and then an area for the meal description.
+I want to use a scroll bar that scrolls through the menuContent div.
+
+Research scroll bars on YouTube */
+
+
+
+#image1 {
+    background-image: url('../src/Menu-Items/h-boiled-eggs-s.jpg');
+    width: 650px;
+    height: 463px;
+    background-size: cover;
+}
+
+#image2 {
+    background-image: url('../src/Menu-Items/Poached-Eggs.jpg');
+    width: 650px;
+    height: 463px;
+    background-size: cover;
+}
+
+#image3 {
+    background-image: url('../src/Menu-Items/quiche.jpg');
+    width: 650px;
+    height: 463px;
+    background-size: cover;
+}
+
+#image4 {
+    background-image: url('../src/Menu-Items/scrambled-eggs.jpg');
+    width: 650px;
+    height: 463px;
+    background-size: cover;
 }
