@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Brootahh-Regular';
+    src: url('../src/Brootahh-Regular.ttf') format('truetype');
+}
+
+
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 #content {
@@ -16,11 +23,29 @@ body {
     justify-content: center;
     align-items: center;
     gap: 200px;
+    border-bottom: black 5px solid;
 }
+
+
+#header .logo p {
+    margin-left: -500px;
+    margin-right: 500px;
+    font-family: 'Brootahh-Regular';
+    font-size: 35px;
+    border: black 5px solid;
+    background-color: orange;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+
+
 
 #container {
     display: flex;
     gap: 200px;
+    margin-left: -400px;
 }
 
 .tab {
@@ -40,11 +65,12 @@ body {
 
 #content-body {
     position: absolute;
-    height: 89.3%;
+    height: 87%;
     width: 100vw;
     background-image: url('../src/egg-vector-smallest.png');
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 /*#overlay {
@@ -59,11 +85,15 @@ body {
 
 #footer {
     width: 100vw;
-    height: 70px;
+    height: 50px;
     position: absolute;
     bottom: 0;
     border-bottom: yellow solid 5px;
     background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px black solid;
 }
 
 
@@ -79,22 +109,72 @@ body {
     height: 95%;
 }
 
+
+#contactContent {
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0, 0.2);
+    height: 90vh;
+    width: 100vw;
+    font-family: 'Brootahh-Regular', sans-serif;
+    font-size: 30px;
+    /* font for this guy too */
+
+}
+
+.contact-Div h2 {
+    margin: 0;
+}
+
+#location-img {
+    justify-content: center;
+    background-image: url('../src/Good-Egg-Location.png');
+    width: 822px;
+    height: 402px;
+}
+
+#homeContent {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 0;
+    font-family: 'Brootahh-Regular', sans-serif;
+    font-size: 40px;
+}
+
+#home-div {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../src/home-icon-s.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -200px;
+}
+
 #menuContent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    
-    overflow-y: scroll;
-}
-
-#contactContent {
-    display: block !important;
-    font-size: larger;
+    overflow-y: auto;
 }
 
 .menu-item {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
     height: 500px;
     gap: 20px;
 }
@@ -111,17 +191,6 @@ body {
     background-color: rgb(0,0,0, 0.2);
     
 }
-
-#content-body {
-    overflow: hidden;
-}
-
-/* What I want is for there to be one column with rows that
-accomodate for a picture of the dish and then an area for the meal description.
-I want to use a scroll bar that scrolls through the menuContent div.
-
-Research scroll bars on YouTube */
-
 
 
 #image1 {
@@ -151,3 +220,9 @@ Research scroll bars on YouTube */
     height: 463px;
     background-size: cover;
 }
+
+.item-image {
+    border: black solid 5px;
+}
+
+

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeTab = document.getElementById("home");
     const menuTab = document.getElementById("menu");
     const contactTab = document.getElementById("contact");
+    const eggButton = document.querySelector(".eggButton");
 
     const homeContent = document.getElementById("homeContent");
     const menuContent = document.getElementById("menuContent");
@@ -39,4 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
         hideAllContent();
         showContent(contactContent);
     });
+
+    eggButton.addEventListener("click", function () {
+        hideAllContent();
+        showContent(homeContent);
+    });
+
 });
